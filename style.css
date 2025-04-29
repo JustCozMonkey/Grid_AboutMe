@@ -1,0 +1,35 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 20px;
+}
+
+.logo img {
+    width: 2.125rem;
+    height: 2.125rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mainImg {
+    background-image: url("background.png");
+    background-size: cover;
+    height: 25vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 0px;
+}
