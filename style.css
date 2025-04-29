@@ -1,8 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     height: 83px;
     align-items: center;
+    padding: 0px 5vw;
+}
+
+footer {
+    background-color: #202020;
+    color: white;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0px;
 }
 
 ul {
@@ -24,12 +45,38 @@ ul {
 }
 
 .mainImg {
-    background-image: url("background.png");
+    background-image: url("imgs/background.png");
     background-size: cover;
-    height: 25vh;
+    background-position: center;
+    width: 100vw;
+    aspect-ratio: 16 / 9;
+    position: relative;
     color: white;
     display: flex;
-    flex-direction: column;
     justify-content: end;
-    gap: 0px;
+    padding: 2rem;
+    max-height: 500px;
+    flex-direction: column;
+}
+
+.blog {
+    width: 100vw;
+
+}
+
+.blog img {
+    width: 90%;
+    background-size: contain;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+    padding: 2rem 1rem;
+
+}
+
+p {
+    margin: 1rem 0;
 }
