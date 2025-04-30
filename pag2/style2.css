@@ -45,18 +45,19 @@ ul {
 }
 
 .mainImg {
-    background-image: url("/imgs/background.png");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    aspect-ratio: 16 / 9;
+    width: 80%;
+    height: auto;
+    display: block;
     position: relative;
     color: white;
     display: flex;
-    justify-content: end;
-    padding: 2rem;
-    max-height: 500px;
-    flex-direction: column;
+    margin: 0 auto;
+}
+
+.textDescription,
+.introText {
+    padding: 4rem 15vw;
+    ;
 }
 
 .blog {
@@ -71,6 +72,8 @@ ul {
 }
 
 .blogs {
+    width: 90%;
+    margin: 0px auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 6% 3% 0 3%;
