@@ -34,6 +34,13 @@ ul {
     gap: 20px;
 }
 
+li {
+    padding: 0px 1rem;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: white;
+}
+
 .logo img {
     width: 2.125rem;
     height: 2.125rem;
@@ -47,7 +54,6 @@ ul {
 
 .textDescription {
     padding: 4rem 15vw;
-    ;
 }
 
 .blog {
@@ -109,18 +115,21 @@ a {
     color: black;
 }
 
-nav {
-    display: flex;
-    flex-direction: column;
-
+.navBar {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -100%;
+    width: rem;
+    padding: 0;
+    border-radius: 5px;
 }
 
 .fa-solid {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateY(-500%);
-    transform: translateX(-100%);
+    transform: translate(-100%, -50%);
 }
 
 .hide {
@@ -140,9 +149,16 @@ nav {
 
     .navBar {
         display: flex;
+        position: relative;
+        width: auto;
     }
 
     .fa-solid {
         display: none;
+    }
+
+    li {
+        padding: 0px;
+        border: none;
     }
 }

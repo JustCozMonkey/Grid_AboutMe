@@ -1,5 +1,11 @@
 import { posts } from "/posts.js"
 
+
+document.querySelector(".fa-solid").addEventListener("click", () => {
+    document.querySelector(".navBar").classList.toggle("hide");
+    console.log("Cartof")
+});
+
 const pageAdd = 3;
 let currnetDispaly = 3;
 const getBlogs = (arr) => {
